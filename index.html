@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Sistema operativo y versión</title>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8">
+
+	//Espera a que se inicie PhoneGap
+	document.addEventListener("deviceready", ControlBotones, false);
+
+	function ControlBotones(){
+		document.addEventListener("menubutton", Menu, false);
+		document.addEventListener("backbutton", Atras, false);
+		document.addEventListener("searchbutton", Buscar, false);
+	}
+	
+	function Menu() {
+		alert("Ha pulsado el botón Menú");
+	}
+	
+	function Atras() {
+		alert("Ha pulsado el botón Atrás");
+	}
+	
+	function Buscar() {
+		alert("Ha pulsado el botón Buscar");
+	}	
+	
+	</script>
+  </head>
+  <body>
+  </body>
+</html>
